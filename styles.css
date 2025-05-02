@@ -220,72 +220,66 @@ nav a:hover::after {
 }
 
 /* Publications Section */
-.publications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+.publications-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.publication-card {
-    background-color: var(--card-bg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
+.publication-item {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #eaeaea;
 }
 
-.publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.publication-item:last-child {
+    border-bottom: none;
 }
 
-.publication-card h3 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
+.publication-title {
+    font-size: 1.25rem;
     font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    line-height: 1.4;
 }
 
-.authors {
-    font-size: 0.9rem;
+.publication-authors {
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     color: #555;
 }
 
-.venue {
-    font-size: 0.9rem;
+.publication-authors span.highlight {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.publication-venue {
+    font-size: 0.95rem;
     font-style: italic;
-    margin-bottom: 1rem;
-    color: #777;
+    margin-bottom: 0.7rem;
+    color: #666;
 }
 
 .publication-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
 }
 
-.publication-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    background-color: var(--light-bg);
-    color: var(--primary-color);
+.publication-links a {
+    display: inline-block;
+    margin-right: 0.8rem;
+    color: var(--secondary-color);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-weight: 500;
     transition: var(--transition);
 }
 
-.publication-link i {
-    margin-right: 0.3rem;
-}
-
-.publication-link:hover {
-    background-color: var(--secondary-color);
-    color: white;
+.publication-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Resume Section */
