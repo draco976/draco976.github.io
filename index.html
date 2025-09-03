@@ -6,70 +6,65 @@
     <title>Harshvardhan Agarwal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="images/profile photo.jpeg" alt="Harshvardhan Agarwal">
-                </div>
-                <div class="profile-content">
-                    <h1>Harshvardhan Agarwal</h1>
-                    <br>
-                    <br>
-                    <p>Graduate Student at Stanford University</p>
-                    <br>
-                    <div class="social-links">
-                        <a href="https://github.com/draco976" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/harshvardhan-agarwal-873013136/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:hvag976@stanford.edu"><i class="fas fa-envelope"></i></a>
-                    </div>
+    <div class="layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-image">
+                <img src="images/profile photo.jpeg" alt="Harshvardhan Agarwal">
+            </div>
+            <div class="profile-info">
+                <h1>Harshvardhan Agarwal</h1>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harshvardhan-agarwal-873013136/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/draco976" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fas fa-graduation-cap"></i> Google Scholar
+                    </a>
+                    <a href="mailto:hvag976@stanford.edu">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
                 </div>
             </div>
-        </div>
-    </header>
+        </aside>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
+        <!-- Main Content -->
+        <main class="content">
+            <section id="about" class="section">
+                <h2>About Me</h2>
                 <p>I am currently a graduate student in the CS department at Stanford.</p>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul class="publications-list">
-                <li class="publication-item">
-                    <div class="publication-title">The Missing Alignment Link of In-context Learning on Sequences</div>
-                    <div class="publication-authors"><span class="highlight">Harshvardhan Agarwal</span> and Sunita Sarawagi</div>
-                    <div class="publication-venue">International Conference on Machine Learning (ICML), 2025</div>
-                </li>
-
-                <li class="publication-item">
-                    <div class="publication-title">Harmonious Balanced Partitioning of a Network of Agents</div>
-                    <div class="publication-authors">Pulkit Agarwal, <span class="highlight">Harshvardhan Agarwal</span>, Vaibhav Raj and Swaprava Nath</div>
-                    <div class="publication-venue">International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2024</div>
-                    <div class="publication-links">
-                        <a href="https://www.cse.iitb.ac.in/~swaprava/papers/balanced.pdf" target="_blank">[PDF]</a>
+            <section id="publications" class="section">
+                <h2>Publications</h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <div class="publication-title">The Missing Alignment Link of In-context Learning on Sequences</div>
+                        <div class="publication-authors"><span class="highlight">Harshvardhan Agarwal</span> and Sunita Sarawagi</div>
+                        <div class="publication-venue">International Conference on Machine Learning (ICML), 2025</div>
+                        <div class="publication-links">
+                            <a href="https://openreview.net/pdf?id=4Xvkpaikt4" target="_blank">[PDF]</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+
+                    <div class="publication-item">
+                        <div class="publication-title">Harmonious Balanced Partitioning of a Network of Agents</div>
+                        <div class="publication-authors">Pulkit Agarwal, <span class="highlight">Harshvardhan Agarwal</span>, Vaibhav Raj and Swaprava Nath</div>
+                        <div class="publication-venue">International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2024</div>
+                        <div class="publication-links">
+                            <a href="https://www.cse.iitb.ac.in/~swaprava/papers/balanced.pdf" target="_blank">[PDF]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
 
     <script src="script.js"></script>
